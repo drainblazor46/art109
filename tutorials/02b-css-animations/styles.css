@@ -1,0 +1,129 @@
+body {
+    animation: change-color 10s infinite alternate;
+}
+
+@keyframes change-color {
+    0% {
+        background-color: antiquewhite;
+    }
+
+    50% {
+        background-color: yellow;
+    }
+
+    100% {
+        background-color: aquamarine;
+    }
+}
+
+
+.title {
+    font-family: cursive;
+    text-align: center;
+    margin: 8px auto;
+    animation: skew 3s infinite alternate;
+}
+
+@keyframes skew {
+    0% {
+        transform: skew(0deg, 0deg);
+    }
+
+    100% {
+        transform: skew(30deg, 20deg);
+    }
+}
+
+
+.square {
+    background-color: orangered;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 50px auto;
+    transition: all 1s;
+}
+
+.square:hover {
+    background-color: greenyellow;
+    transform: rotate(30deg);
+}
+
+.button-div {
+    text-align: center;
+}
+
+.button {
+    color: white;
+    background-color: green;
+    padding: 15px;
+    margin: 50px auto;
+    display: inline-block;
+    width: 100px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all .5s;
+    color: black;
+}
+
+.button:hover {
+    background-color: greenyellow;
+    transform: scale(1.5);
+}
+
+.loading {
+    background-color: green;
+    animation: stretch 5s infinite alternate;
+    width: 80vw;
+}
+
+@keyframes stretch {
+    0% {
+        width: 100px;
+    }
+
+    100% {
+        width: 80vw;
+    }
+}
+
+.boom {
+    color: red;
+    animation: enlarge 5s infinite alternate;
+    width: 100px;
+    text-align: center;
+    margin: 50px auto;
+}
+
+@keyframes enlarge {
+    0% {transform: scale(0);}
+    100% {transform: scale(30);}
+}
+
+.star {
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    background: gold;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+      );
+    border-radius: 20px;
+    margin: 50px auto;
+    transition: all 1s;
+}
+
+.star:hover {
+    background-color: blue;
+    transform: rotate(360deg);
+}
+
