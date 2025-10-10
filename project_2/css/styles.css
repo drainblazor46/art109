@@ -50,8 +50,9 @@ h2 {
 }
 
 img {
-    width: 900px;
-    height: 450px;
+  display: block;
+  margin: auto;
+  width: 50%;
 }
 
 .button-div {
