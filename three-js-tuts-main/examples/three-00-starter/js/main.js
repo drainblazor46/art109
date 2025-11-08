@@ -3,7 +3,7 @@
 
 
 //~~~~~~~Import Three.js (also linked to as import map in HTML)~~~~~~
-import * as THREE from '/three/build/three.module.js';
+import * as THREE from '../three/build/three.module.js';
 
 // Import add-ons
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
