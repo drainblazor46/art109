@@ -20,7 +20,7 @@ import { GLTFLoader } from 'https://unpkg.com/three@0.162.0/examples/jsm/loaders
 
 
 // ~~~~~~~~~~~~~~~~ Declare Global Variables~~~~~~~~~~~~~~~~
-let scene, camera, renderer, cube, dog;
+let scene, camera, renderer, cube, pikachu;
 
 
 // ~~~~~~~~~~~~~~~~ Initialize Scene in init() ~~~~~~~~~~~~~~~~
@@ -87,12 +87,11 @@ function init() {
 
     // --> Load glTF
 
-    // load dog model
-    loader.load('assets/dog_shiny.gltf', function (gltf) {
-        dog = gltf.scene;
-        scene.add(dog);
-        dog.scale.set(2, 2, 2); // scale your model
-        dog.position.y = -2; // set initial position
+    loader.load('assets/SJSUPikachu.gltf', function (gltf) {
+        pikachu = gltf.scene;
+        scene.add(pikachu);
+        pikachu.scale.set(2, 2, 2); // scale your model
+        pikachu.position.y = -2; // set initial position
     });
 
 
@@ -117,9 +116,9 @@ function animate() {
     cube.rotation.x += 0.007;
     cube.rotation.y += 0.007;
 
-    if (dog) {
+    if (pikachu) {
         // dog.rotation.x += 0.007;
-        dog.rotation.y += 0.007;
+        pikachu.rotation.y += 0.007;
     }
 
 

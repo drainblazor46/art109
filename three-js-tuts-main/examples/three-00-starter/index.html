@@ -6,9 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Three.js Starter File</title>
   <link rel="stylesheet" href="css/style.css">
-
   <!-- use an import map to link to the Three.js CDN -->
-
   <script type="importmap">
       {
         "imports": {
@@ -18,18 +16,14 @@
       }
     </script>
 
-
   <!-- Link to your Javascript file as a type="module", this will execute the file after the HTML is loaded --><script type="module" src="js/main.js"></script>
-
 </head>
 
 
 <body>
   <header>
-    <p>Starter file from <a href="https://threejs.org/docs/#manual/en/introduction/Creating-a-scene">Three.js
-        documentation</a></p>
-    <p>Three.js library is imported via a <a
-        href="https://threejs.org/docs/#manual/en/introduction/Installation">CDN</a></p>
+        <script src="https://cdn.jsdelivr.net/npm/three@0.127.0/build/three.min.js"></script>
+        <script type="module" src="js/main.js"></script>
   </header>
 </body>
 </html>
